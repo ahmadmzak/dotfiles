@@ -1,0 +1,18 @@
+name: goodfits
+root: ~/Development/goodfits
+
+on_project_start: git checkout master && git pull
+
+windows:
+  - frontend:
+      root: ~/Development/goodfits/frontend
+      layout: main-vertical
+      panes:
+        - nvim
+        - yarn && yarn start
+  - backend:
+      root: ~/Development/goodfits/backend
+      layout: main-vertical
+      panes:
+        - nvim
+        - yarn && yarn start
