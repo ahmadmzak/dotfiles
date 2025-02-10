@@ -17,4 +17,8 @@ First, clone this repository into the home directory:
 Then, go into the dotfiles directory and run the following command:
 
     cd dotfiles
-    stow -t ~ dotfiles
+    stow */
+
+Or only the packages you need:
+
+    stow zsh tmux
