@@ -10,3 +10,6 @@ vim.keymap.set("n", "<A-k>", "<C-w>-", { desc = "Resize pane up" })
 -- Ctrl + c to close oil
 -- Leader + 0 to open oil
 vim.keymap.set("n", "<leader>0", "<cmd>Oil<CR>", { desc = "Open Oil file explorer" })
+vim.keymap.set("n", "<leader>gb", function()
+  require("gitsigns").blame_line()
+end, { desc = "Git Blame Line" })
